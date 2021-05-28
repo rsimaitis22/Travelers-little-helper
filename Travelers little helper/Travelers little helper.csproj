@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Travelers_little_helper</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Autumn.png" />
+    <None Remove="Spring.png" />
+    <None Remove="Summer.png" />
+    <None Remove="T_4-01.jpg" />
+    <None Remove="Winter.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travelers.BL\Travelers.BL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Autumn.png" />
+    <Resource Include="Spring.png" />
+    <Resource Include="Summer.png" />
+    <Resource Include="T_4-01.jpg" />
+    <Resource Include="Winter.png" />
+  </ItemGroup>
+
+</Project>
